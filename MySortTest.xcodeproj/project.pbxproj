@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BD4B222B93063009899C9 /* TwoValueSum.swift */; };
 		E5993CC81E79561E00C70CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5993CC71E79561E00C70CC9 /* main.m */; };
 		E5993CCB1E79561E00C70CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5993CCA1E79561E00C70CC9 /* AppDelegate.m */; };
 		E5993CCE1E79561E00C70CC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5993CCD1E79561E00C70CC9 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E51BD4B122B93062009899C9 /* MySortTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySortTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		E51BD4B222B93063009899C9 /* TwoValueSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoValueSum.swift; sourceTree = "<group>"; };
 		E5993CC31E79561E00C70CC9 /* MySortTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySortTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5993CC71E79561E00C70CC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5993CC91E79561E00C70CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 		E5993CDD1E79566D00C70CC9 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				E51BD4B122B93062009899C9 /* MySortTest-Bridging-Header.h */,
+				E51BD4B222B93063009899C9 /* TwoValueSum.swift */,
 				E5993CDE1E79566D00C70CC9 /* ZJSort.h */,
 				E5993CDF1E79566D00C70CC9 /* ZJSort.m */,
 			);
@@ -123,6 +128,7 @@
 				TargetAttributes = {
 					E5993CC21E79561E00C70CC9 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -163,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */,
 				E5993CCE1E79561E00C70CC9 /* ViewController.m in Sources */,
 				E5993CCB1E79561E00C70CC9 /* AppDelegate.m in Sources */,
 				E5993CC81E79561E00C70CC9 /* main.m in Sources */,
@@ -304,10 +311,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MySortTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengled.MySortTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySortTest/Sort/MySortTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -315,10 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MySortTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengled.MySortTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySortTest/Sort/MySortTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
