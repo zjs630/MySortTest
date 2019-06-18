@@ -24,7 +24,7 @@
         min = i;//第几次外循环，把第几个数，默认标记为最小的数
         //内循环，每循环完一次，开始循环的起始位置，要增加一个。所以循环i次，j=1+i。
         for (int j = i+1; j<count; j++) {
-            if (m[min]>m[j]) {//第一次 第一个数和第二个数比较，找出最小数，和下个数比较。
+            if ([m[min] intValue]>[m[j] intValue]) {//第一次 第一个数和第二个数比较，找出最小数，和下个数比较。
                 min = j;//a[min]始终记录当前最小的数
             }
         }
@@ -51,7 +51,7 @@
             //比较相邻的元素。如果第一个比第二个大，就交换他们两个。
             //对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这时最后的元素应该会是最大的数。
             //下一趟i循环，排除最后一个元素。//这样每次对比的元素原来越少。
-            if(m[j]>m[j+1]){
+            if([m[j] intValue]>[m[j+1] intValue]){
                 //交换
                 temp = m[j];
                 m[j] = m[j+1];
@@ -76,7 +76,7 @@
         temp = m[i];//准备将第i个数插入到前面
         //内循环，从有序序列的后面往前依次进行比较。比较起始位置的最后一个数下标为：i-1，一直到下标为0到数结束。
         for (j = i-1; j>=0; j--) {
-            if (temp<m[j]) {//如果要插入的数temp，比要比较的数m[j]值小，
+            if ([temp intValue] < [m[j] intValue]) {//如果要插入的数temp，比要比较的数m[j]值小，
                 m[j+1] = m[j];//m[j]后移一个位置
             }else{//如果temp大于比较的数，则结束内循环。若没有执行else，则说明temp要放入第一个位置。
                 break;
@@ -101,13 +101,13 @@
     int j = high;
     id key = m[i];
     while (i<j) {
-        while (i<j && m[j] >= key) {
+        while (i<j && [m[j] intValue] >= [key intValue]) {
             j--;
         }
         if (i<j) {//当key是最小的数时，会出现i=j的情况，
             m[i++] = m[j];//说明m[j]小于关键值，将其放置到前面i位置、、//j位置等下面找到一个大数后，覆盖。
             //接着从前面i+1的位置找大于key的值。//不加1会多一次比较
-            while (i<j && m[i] <= key) {
+            while (i<j && [m[i] intValue] <= [key intValue]) {
                 i++;
             }  //从前面开始找到大于key的值，放到后面。
             if (i<j) {//当key是目前最大的数时(m[j]的前面)，会出现i=j的情况，
@@ -119,7 +119,7 @@
     m[i]= key;/*当在当组内找完一遍以后就把中间数key回归*/
     [self quickSort:m low:low high:i-1];
     [self quickSort:m low:i+1 high:high];
-    //NSLog(@"快速排序 %@",m);
+    NSLog(@"快速排序 %@",m);
 }
 
 
