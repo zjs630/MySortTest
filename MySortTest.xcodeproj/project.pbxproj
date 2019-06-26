@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E508558D22C37E73004131B2 /* IntArraySort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508558C22C37E73004131B2 /* IntArraySort.swift */; };
 		E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BD4B222B93063009899C9 /* TwoValueSum.swift */; };
 		E5993CC81E79561E00C70CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5993CC71E79561E00C70CC9 /* main.m */; };
 		E5993CCB1E79561E00C70CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5993CCA1E79561E00C70CC9 /* AppDelegate.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E508558C22C37E73004131B2 /* IntArraySort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntArraySort.swift; sourceTree = "<group>"; };
 		E51BD4B122B93062009899C9 /* MySortTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySortTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		E51BD4B222B93063009899C9 /* TwoValueSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoValueSum.swift; sourceTree = "<group>"; };
 		E5993CC31E79561E00C70CC9 /* MySortTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySortTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 			children = (
 				E51BD4B122B93062009899C9 /* MySortTest-Bridging-Header.h */,
 				E51BD4B222B93063009899C9 /* TwoValueSum.swift */,
+				E508558C22C37E73004131B2 /* IntArraySort.swift */,
 				E5993CDE1E79566D00C70CC9 /* ZJSort.h */,
 				E5993CDF1E79566D00C70CC9 /* ZJSort.m */,
 			);
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */,
+				E508558D22C37E73004131B2 /* IntArraySort.swift in Sources */,
 				E5993CCE1E79561E00C70CC9 /* ViewController.m in Sources */,
 				E5993CCB1E79561E00C70CC9 /* AppDelegate.m in Sources */,
 				E5993CC81E79561E00C70CC9 /* main.m in Sources */,
