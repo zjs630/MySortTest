@@ -3,4 +3,6 @@
 2. 求两数和 （swift实现）
 <br />
 <br />
+常用排序算法，执行时间对比
+![Alt tag](time.png)
 <br />

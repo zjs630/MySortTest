@@ -61,7 +61,7 @@ import Foundation
         quickSort1(a: &a, low: i + 1, high: high) // 右递归
     }
 
-    /// 代码量少,效率高
+    /// 代码量少,效率高,已将此Swift版本算法提交到百度词条，可搜索"快速排序"
     static func quickSort2(a: inout [Int], low: Int, high: Int) {
         if low >= high { // 递归结束条件
             return
