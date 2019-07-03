@@ -12,11 +12,9 @@ class SwiftViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-    /// 两数之和
+    /// 1.两数之和
     @IBAction func twoValueSumTest(_ sender: UIButton) {
         let nums = [2, 7, 11, 15,77];
         let target = 17
@@ -28,16 +26,11 @@ class SwiftViewController: UIViewController {
         }
     }
     
-    /// 找数组中第二大数
+    /// 2.找数组中第二大数
     @IBAction func findSecondValue(_ sender: UIButton) {
         print("-------------------------------")
         // 1.随机产生n个数放入数组中
-        let number = 10;
-        var array: [Int] = [];
-        for _ in 0..<number {
-            let random = Int.random(in: 0...number)
-            array.append(random)
-        }
+        let array: [Int] = Array<Int>.randomIntData(count: 10)
         print("数组：\(array)")
         // 2.查找第二大数
         let secondNum = FindSecondBigNumber.findSecondBig(in: array)
@@ -45,8 +38,61 @@ class SwiftViewController: UIViewController {
         // 不考虑最大数重复情况
         let secondNum2 = FindSecondBigNumber.findSecondBig2(in: array)
         print("数组中第二大数：\(secondNum2)(不考虑最大数重复情况)")
-        print("-------------------------------")
+
+    }
+    /// 3.二分查找（两种算法）
+    @IBAction func binarySearch(_ sender: UIButton) {
+        // 1.随机产生n个数放入数组中
+        let number = 10000;
+        var array: Set<Int> = [];
+        for _ in 0..<number {
+            let random = Int.random(in: 0...number)
+            array.insert(random)
+        }
+        // 2.生成有序数组，指定key
+        let sortedArray = array.sorted()
+        print(sortedArray)
+        
+        let key = 2
+        
+        // 3.二分查找（非递归算法）
+        let date2 = Date()
+        if let index = BinarySearch.binarySearch(a: sortedArray, key: key) {
+            let str = String(format: "%.8f", Date().timeIntervalSince(date2))
+            print("二分查找执行时间：",str)
+            print("要查找的数index为：\(index)")
+        } else {
+            print("数组中没有找到\(key)")
+        }
+        
+        // 4.二分查找(递归算法)
+        let date3 = Date()
+        let x = BinarySearch.binarySearchRecursion(a: sortedArray, key: key, low: 0, high: sortedArray.count - 1)
+        if let index = x {
+            let str = String(format: "%.8f", Date().timeIntervalSince(date3))
+            print("二分查找递归算法执行时间：",str)
+            print("要查找的数index为：\(index)")
+        }
+
     }
     
+    /// 4.系统排序和二分查找排序效率对比
+    @IBAction func sortTimeTest(_ sender: UIButton) {
+        // 1.生成随机数数组
+        var array: [Int] = Array<Int>.randomIntData(count: 1000)
+        print("-------------------------------")
+
+        // 2.系统排序算法
+        let date2 = Date()
+        let _ = array.sorted()
+        let str = String(format: "%.8f", Date().timeIntervalSince(date2))
+        print("系统排序算法执行时间：",str)
+
+        // 3.快速排序算法
+        let date3 = Date()
+        IntArraySort.quickSort2(a: &array, low: 0, high: array.count - 1)
+        let str3 = String(format: "%.8f", Date().timeIntervalSince(date3))
+        print("快速排序执行时间：",str3)
+    }
     
 }

@@ -65,28 +65,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1se-4U-5bA">
-                                <rect key="frame" x="156" y="163" width="102" height="36"/>
+                                <rect key="frame" x="148.5" y="163" width="117" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="求两数之和"/>
+                                <state key="normal" title="1.求两数之和"/>
                                 <connections>
                                     <action selector="twoValueSumTest:" destination="gdf-h3-eyD" eventType="touchUpInside" id="h4s-rn-zoR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFa-f1-RBc">
-                                <rect key="frame" x="156" y="211" width="102" height="36"/>
+                                <rect key="frame" x="147" y="211" width="120" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="找第二大数"/>
+                                <state key="normal" title="2.找第二大数"/>
                                 <connections>
                                     <action selector="findSecondValue:" destination="gdf-h3-eyD" eventType="touchUpInside" id="W0x-lD-Q3r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVL-dM-UxF">
+                                <rect key="frame" x="157.5" y="261" width="99" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="3.二分查找"/>
+                                <connections>
+                                    <action selector="binarySearch:" destination="gdf-h3-eyD" eventType="touchUpInside" id="JUa-Df-hcT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibD-cp-eiW">
+                                <rect key="frame" x="85.5" y="311" width="243" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="4.系统排序和二分查找排序"/>
+                                <connections>
+                                    <action selector="sortTimeTest:" destination="gdf-h3-eyD" eventType="touchUpInside" id="upr-Bh-s1d"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BFa-f1-RBc" firstAttribute="top" secondItem="1se-4U-5bA" secondAttribute="bottom" constant="12" id="2G1-Wu-jIY"/>
+                            <constraint firstItem="ibD-cp-eiW" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="7Yf-Tb-O2Q"/>
                             <constraint firstItem="BFa-f1-RBc" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="GLO-X4-eW3"/>
+                            <constraint firstItem="yVL-dM-UxF" firstAttribute="top" secondItem="BFa-f1-RBc" secondAttribute="bottom" constant="14" id="QqE-31-GfB"/>
                             <constraint firstItem="1se-4U-5bA" firstAttribute="top" secondItem="yKR-qY-j8z" secondAttribute="bottom" constant="75" id="a96-Ym-clF"/>
+                            <constraint firstItem="yVL-dM-UxF" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="knl-Vm-ReM"/>
                             <constraint firstItem="1se-4U-5bA" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="qrC-ye-3P3"/>
+                            <constraint firstItem="ibD-cp-eiW" firstAttribute="top" secondItem="yVL-dM-UxF" secondAttribute="bottom" constant="14" id="yJZ-nG-XGf"/>
                         </constraints>
                     </view>
                 </viewController>

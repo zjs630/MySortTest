@@ -27,14 +27,14 @@
  */
 - (IBAction)sortTest:(UIButton *)sender {
 
+    // 产生随机数数组
     int number = 10000;
     NSMutableArray *array = [NSMutableArray array];
     for(int i = 0; i < number; i++) {
         int x = random() % number;
         [array addObject:@(x)];
     }
-    NSInteger a = [FindSecondBigNumber findSecondBigIn:array];
-    NSLog(@"%ld", (long)a);
+
     //冒泡排序
     NSDate *tmpDate3 = [NSDate date];
     [ZJSort bubbleSort:[NSMutableArray arrayWithArray:array]];

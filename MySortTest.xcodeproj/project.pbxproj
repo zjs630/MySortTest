@@ -17,6 +17,8 @@
 		E5993CD31E79561E00C70CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5993CD21E79561E00C70CC9 /* Assets.xcassets */; };
 		E5993CD61E79561E00C70CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5993CD41E79561E00C70CC9 /* LaunchScreen.storyboard */; };
 		E5993CE01E79566D00C70CC9 /* ZJSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E5993CDF1E79566D00C70CC9 /* ZJSort.m */; };
+		E59CCA0A22CCDDC20074CBD3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59CCA0922CCDDC20074CBD3 /* BinarySearch.swift */; };
+		E59CCA0D22CCF3110074CBD3 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59CCA0C22CCF3110074CBD3 /* Array+Extensions.swift */; };
 		E5D02AAD22CC90D10075D3AC /* FindSecondBigNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D02AAC22CC90D10075D3AC /* FindSecondBigNumber.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		E5993CD71E79561E00C70CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5993CDE1E79566D00C70CC9 /* ZJSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSort.h; sourceTree = "<group>"; };
 		E5993CDF1E79566D00C70CC9 /* ZJSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSort.m; sourceTree = "<group>"; };
+		E59CCA0922CCDDC20074CBD3 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		E59CCA0C22CCF3110074CBD3 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		E5D02AAC22CC90D10075D3AC /* FindSecondBigNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSecondBigNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 		E5993CC51E79561E00C70CC9 /* MySortTest */ = {
 			isa = PBXGroup;
 			children = (
+				E59CCA0B22CCF2F80074CBD3 /* Tools */,
 				E51BD4B122B93062009899C9 /* MySortTest-Bridging-Header.h */,
 				E5D02AAE22CC914A0075D3AC /* Algorithm */,
 				E5993CDD1E79566D00C70CC9 /* Sort */,
@@ -105,11 +110,20 @@
 			path = Sort;
 			sourceTree = "<group>";
 		};
+		E59CCA0B22CCF2F80074CBD3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E59CCA0C22CCF3110074CBD3 /* Array+Extensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		E5D02AAE22CC914A0075D3AC /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
 				E51BD4B222B93063009899C9 /* TwoValueSum.swift */,
 				E5D02AAC22CC90D10075D3AC /* FindSecondBigNumber.swift */,
+				E59CCA0922CCDDC20074CBD3 /* BinarySearch.swift */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -187,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5883C4D22CCB973001813B0 /* SwiftViewController.swift in Sources */,
+				E59CCA0D22CCF3110074CBD3 /* Array+Extensions.swift in Sources */,
 				E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */,
+				E59CCA0A22CCDDC20074CBD3 /* BinarySearch.swift in Sources */,
 				E508558D22C37E73004131B2 /* IntArraySort.swift in Sources */,
 				E5993CCE1E79561E00C70CC9 /* ViewController.m in Sources */,
 				E5D02AAD22CC90D10075D3AC /* FindSecondBigNumber.swift in Sources */,
