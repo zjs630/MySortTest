@@ -32,6 +32,7 @@
   快速排序
   @param m 数组一定要为可变数组
  */
++ (void)quickSort2:(NSMutableArray *)m low:(int)low high:(int)high;
 + (void)quickSort:(NSMutableArray *)m low:(int)low high:(int)high;
 
 @end

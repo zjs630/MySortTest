@@ -19,14 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self sort];
+
 }
 
 /**
    排序算法时间对比
  */
-
-- (void)sort{
+- (IBAction)sortTest:(UIButton *)sender {
 
     int number = 10000;
     NSMutableArray *array = [NSMutableArray array];
@@ -34,7 +33,8 @@
         int x = random() % number;
         [array addObject:@(x)];
     }
-
+    NSInteger a = [FindSecondBigNumber findSecondBigIn:array];
+    NSLog(@"%ld", (long)a);
     //冒泡排序
     NSDate *tmpDate3 = [NSDate date];
     [ZJSort bubbleSort:[NSMutableArray arrayWithArray:array]];
@@ -53,23 +53,29 @@
     double time2 = [[NSDate date] timeIntervalSinceDate:tmpDate2];
     NSLog(@"执行时间：%f-----插入排序---------",time2);
 
-    //快速排序
+    //OC 快速排序1
     NSDate *tmpDate4 = [NSDate date];
     [ZJSort quickSort:[NSMutableArray arrayWithArray:array] low:0 high:(int)[array count]-1];
     double time4 = [[NSDate date] timeIntervalSinceDate:tmpDate4];
-    NSLog(@"执行时间：%f-----OC 快速排序------",time4);
+    NSLog(@"执行时间：%f-----OC 快速排序1------",time4);
 
-    // swift 快速排序
+    //OC 快速排序2
     NSDate *tmpDate5 = [NSDate date];
-    [IntArraySort sortTest1:[NSMutableArray arrayWithArray:array]];
+    [ZJSort quickSort2:[NSMutableArray arrayWithArray:array] low:0 high:(int)[array count]-1];
     double time5 = [[NSDate date] timeIntervalSinceDate:tmpDate5];
-    NSLog(@"执行时间：%f-----swift 快速排序1---",time5);
-    
-    // swift 快速排序
+    NSLog(@"执行时间：%f-----OC 快速排序2------",time5);
+
+    // swift 快速排序1
     NSDate *tmpDate6 = [NSDate date];
-    [IntArraySort sortTest2:[NSMutableArray arrayWithArray:array]];
+    [IntArraySort sortTest1:[NSMutableArray arrayWithArray:array]];
     double time6 = [[NSDate date] timeIntervalSinceDate:tmpDate6];
-    NSLog(@"执行时间：%f-----swift 快速排序2---",time6);
+    NSLog(@"执行时间：%f-----swift 快速排序1---",time6);
+    
+    // swift 快速排序2
+    NSDate *tmpDate7 = [NSDate date];
+    [IntArraySort sortTest2:[NSMutableArray arrayWithArray:array]];
+    double time7 = [[NSDate date] timeIntervalSinceDate:tmpDate7];
+    NSLog(@"执行时间：%f-----swift 快速排序2---",time7);
 
 }
 

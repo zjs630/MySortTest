@@ -9,7 +9,7 @@
 import Foundation
 
 
-/// 整形数组排序 swift实现
+/// 整型数组快速排序 swift实现
 @objc class IntArraySort: NSObject {
     
     /// 快速排序1测试代码

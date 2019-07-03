@@ -89,7 +89,7 @@
 
 
 /**
- 快速排序
+ 快速排序1 已将此OC版本算法提交到百度词条，可搜索"快速排序"
  @param low  排序开始时 low = 0
  @param high 排序开始时 high = 数组个数-1
  */
@@ -104,25 +104,55 @@
         while (i<j && [m[j] intValue] >= [key intValue]) {
             j--;
         }
-        if (i == j) {//当key是最小的数时，会出现i=j的情况，
-            break;
+        if (i == j) { // 当key是最小的数时，会出现i=j的情况，
+            break; //直接跳出循环，没有必要用continue
         }
-        m[i++] = m[j];//说明m[j]小于关键值，将其放置到前面i位置、、//j位置等下面找到一个大数后，覆盖。
+        m[i++] = m[j]; // 说明m[j]小于关键值，将其放置到前面i位置、、//j位置等下面找到一个大数后，覆盖。
         
-        //接着从前面i+1的位置找大于key的值。//不加1会多一次比较
+        // 接着从前面i+1的位置找大于key的值。//不加1会多一次比较
         while (i < j && [m[i] intValue] <= [key intValue]) {
             i++;
-        }  //从前面开始找到大于key的值，放到后面。
-        if (i == j) {//当key是目前最大的数时(m[j]的前面)，会出现i=j的情况
+        }  // 从前面开始找到大于key的值，放到后面。
+        if (i == j) { // 当key是目前最大的数时(m[j]的前面)，会出现i=j的情况
             break;
         }
-        m[j--] = m[i];//将前面大于key的数放置到后面 、、这样一直循环替换。
-        //j-- 会减少一次m[j]和key的比较
+        m[j--] = m[i]; // 将前面大于key的数放置到后面 、、这样一直循环替换。
+        // j-- 会减少一次m[j]和key的比较
     }
     m[i] = key;/*当在当组内找完一遍以后就把中间数key回归*/
     [self quickSort: m low: low high: i-1];
     [self quickSort: m low: i+1 high: high];
     // NSLog(@"快速排序 %@",m);
+}
+
+/**
+ 快速排序2
+ @param low  排序开始时 low = 0
+ @param high 排序开始时 high = 数组个数-1
+ */
++ (void)quickSort2:(NSMutableArray *)m low:(int)low high:(int)high{
+    if (low >= high) {
+        return;
+    }
+    int i = low;
+    int j = high;
+    id key = m[i];
+    while (i<j) {
+        while (i<j && [m[j] intValue] >= [key intValue]) {
+            j--;
+        }
+        m[i] = m[j]; // 说明m[j]小于关键值，将其放置到前面i位置、、//j位置等下面找到一个大数后，覆盖。
+        
+        // 接着从前面i+1的位置找大于key的值。//不加1会多一次比较
+        while (i < j && [m[i] intValue] <= [key intValue]) {
+            i++;
+        }  // 从前面开始找到大于key的值，放到后面。
+        m[j] = m[i]; // 将前面大于key的数放置到后面 、、这样一直循环替换。
+        // j-- 会减少一次m[j]和key的比较
+    }
+    m[i] = key;/*当在当组内找完一遍以后就把中间数key回归*/
+    [self quickSort2: m low: low high: i-1];
+    [self quickSort2: m low: i+1 high: high];
 }
 
 
