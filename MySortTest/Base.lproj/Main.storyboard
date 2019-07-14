@@ -96,6 +96,15 @@
                                     <action selector="sortTimeTest:" destination="gdf-h3-eyD" eventType="touchUpInside" id="upr-Bh-s1d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoO-Da-DX3">
+                                <rect key="frame" x="138" y="361" width="140" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="5.有序数组合并"/>
+                                <connections>
+                                    <action selector="arrayMerge:" destination="gdf-h3-eyD" eventType="touchUpInside" id="r1e-8k-KGl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
