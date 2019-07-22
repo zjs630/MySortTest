@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70E94F3722E5B1F000EA357B /* RevertSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E94F3622E5B1F000EA357B /* RevertSum.swift */; };
 		E508558D22C37E73004131B2 /* IntArraySort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508558C22C37E73004131B2 /* IntArraySort.swift */; };
 		E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BD4B222B93063009899C9 /* TwoValueSum.swift */; };
 		E575A5B022DB249E0098211C /* OrderedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575A5AF22DB249E0098211C /* OrderedArray.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70E94F3622E5B1F000EA357B /* RevertSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertSum.swift; sourceTree = "<group>"; };
 		E508558C22C37E73004131B2 /* IntArraySort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntArraySort.swift; sourceTree = "<group>"; };
 		E51BD4B122B93062009899C9 /* MySortTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySortTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		E51BD4B222B93063009899C9 /* TwoValueSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoValueSum.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70E94F3322E5AD1E00EA357B /* 递归 */ = {
+			isa = PBXGroup;
+			children = (
+				70E94F3622E5B1F000EA357B /* RevertSum.swift */,
+			);
+			path = "递归";
+			sourceTree = "<group>";
+		};
 		E5993CBA1E79561E00C70CC9 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		E5D02AAE22CC914A0075D3AC /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				70E94F3322E5AD1E00EA357B /* 递归 */,
 				E51BD4B222B93063009899C9 /* TwoValueSum.swift */,
 				E5D02AAC22CC90D10075D3AC /* FindSecondBigNumber.swift */,
 				E59CCA0922CCDDC20074CBD3 /* BinarySearch.swift */,
@@ -205,6 +216,7 @@
 			files = (
 				E5883C4D22CCB973001813B0 /* SwiftViewController.swift in Sources */,
 				E59CCA0D22CCF3110074CBD3 /* Array+Extensions.swift in Sources */,
+				70E94F3722E5B1F000EA357B /* RevertSum.swift in Sources */,
 				E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */,
 				E575A5B022DB249E0098211C /* OrderedArray.swift in Sources */,
 				E59CCA0A22CCDDC20074CBD3 /* BinarySearch.swift in Sources */,

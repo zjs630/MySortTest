@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yc9-96-5yj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yc9-96-5yj">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,13 +96,20 @@
                                     <action selector="sortTimeTest:" destination="gdf-h3-eyD" eventType="touchUpInside" id="upr-Bh-s1d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoO-Da-DX3">
-                                <rect key="frame" x="138" y="361" width="140" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoO-Da-DX3">
+                                <rect key="frame" x="137" y="361" width="140" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="5.有序数组合并"/>
                                 <connections>
                                     <action selector="arrayMerge:" destination="gdf-h3-eyD" eventType="touchUpInside" id="r1e-8k-KGl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igA-yQ-mIv">
+                                <rect key="frame" x="157" y="411" width="100" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="6.递归求和"/>
+                                <connections>
+                                    <action selector="sum:" destination="gdf-h3-eyD" eventType="touchUpInside" id="iqa-Pq-dNb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,10 +118,14 @@
                             <constraint firstItem="BFa-f1-RBc" firstAttribute="top" secondItem="1se-4U-5bA" secondAttribute="bottom" constant="12" id="2G1-Wu-jIY"/>
                             <constraint firstItem="ibD-cp-eiW" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="7Yf-Tb-O2Q"/>
                             <constraint firstItem="BFa-f1-RBc" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="GLO-X4-eW3"/>
+                            <constraint firstItem="MoO-Da-DX3" firstAttribute="top" secondItem="ibD-cp-eiW" secondAttribute="bottom" constant="14" id="PBo-0Z-sop"/>
                             <constraint firstItem="yVL-dM-UxF" firstAttribute="top" secondItem="BFa-f1-RBc" secondAttribute="bottom" constant="14" id="QqE-31-GfB"/>
+                            <constraint firstItem="igA-yQ-mIv" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="STc-Kx-SXh"/>
                             <constraint firstItem="1se-4U-5bA" firstAttribute="top" secondItem="yKR-qY-j8z" secondAttribute="bottom" constant="75" id="a96-Ym-clF"/>
+                            <constraint firstItem="MoO-Da-DX3" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="cZJ-aV-VOL"/>
                             <constraint firstItem="yVL-dM-UxF" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="knl-Vm-ReM"/>
                             <constraint firstItem="1se-4U-5bA" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="qrC-ye-3P3"/>
+                            <constraint firstItem="igA-yQ-mIv" firstAttribute="top" secondItem="MoO-Da-DX3" secondAttribute="bottom" constant="14" id="xsJ-74-Ilq"/>
                             <constraint firstItem="ibD-cp-eiW" firstAttribute="top" secondItem="yVL-dM-UxF" secondAttribute="bottom" constant="14" id="yJZ-nG-XGf"/>
                         </constraints>
                     </view>

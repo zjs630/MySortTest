@@ -95,7 +95,7 @@ class SwiftViewController: UIViewController {
         print("快速排序执行时间：",str3)
     }
     
-    /// 4.系统排序和二分查找排序效率对比
+    /// 5.合并有序数组
     @IBAction func arrayMerge(_ sender: UIButton) {
         let arrayA = [1,3,5,7,9];
         let arrayB = [2,4,6,8,10,11,15];
@@ -105,4 +105,11 @@ class SwiftViewController: UIViewController {
         let arrayC = OrderedArray.merge(arrayA, arrayB)
         print("合并后有序数组C为：\(arrayC)")
     }
+    
+    /// 6.递归求和1+2+3+...+100
+    @IBAction func sum(_ sender: UIButton) {
+        let sum = RevertSum.add(100)
+        print("1+2+3+...+100 = \(sum)")
+    }
+    
 }
