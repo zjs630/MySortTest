@@ -111,5 +111,15 @@ class SwiftViewController: UIViewController {
         let sum = RevertSum.add(100)
         print("1+2+3+...+100 = \(sum)")
     }
-    
+    @IBAction func exchangeValue(_ sender: UIButton) {
+        var a = 3
+        var b = 5
+        print("交换前：a = \(a),b = \(b)")
+        ExchangeVlalue.changeA(&a, &b)
+        print("第一次交换：a = \(a),b = \(b)")
+        ExchangeVlalue.changeB(&a, &b)
+        print("第二次交换：a = \(a),b = \(b)")
+        ExchangeVlalue.changeC(&a, &b)
+        print("第三次交换：a = \(a),b = \(b)")
+    }
 }
