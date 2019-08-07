@@ -11,6 +11,7 @@
 		70E94F3722E5B1F000EA357B /* RevertSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E94F3622E5B1F000EA357B /* RevertSum.swift */; };
 		E508558D22C37E73004131B2 /* IntArraySort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508558C22C37E73004131B2 /* IntArraySort.swift */; };
 		E51BD4B322B93063009899C9 /* TwoValueSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BD4B222B93063009899C9 /* TwoValueSum.swift */; };
+		E5207A5822FAF462007D5EA9 /* MaxSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5207A5722FAF462007D5EA9 /* MaxSubArray.swift */; };
 		E575A5B022DB249E0098211C /* OrderedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575A5AF22DB249E0098211C /* OrderedArray.swift */; };
 		E5883C4D22CCB973001813B0 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5883C4C22CCB973001813B0 /* SwiftViewController.swift */; };
 		E5993CC81E79561E00C70CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5993CC71E79561E00C70CC9 /* main.m */; };
@@ -31,6 +32,7 @@
 		E508558C22C37E73004131B2 /* IntArraySort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntArraySort.swift; sourceTree = "<group>"; };
 		E51BD4B122B93062009899C9 /* MySortTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySortTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		E51BD4B222B93063009899C9 /* TwoValueSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoValueSum.swift; sourceTree = "<group>"; };
+		E5207A5722FAF462007D5EA9 /* MaxSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxSubArray.swift; sourceTree = "<group>"; };
 		E575A5AF22DB249E0098211C /* OrderedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedArray.swift; sourceTree = "<group>"; };
 		E5883C4C22CCB973001813B0 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		E5993CC31E79561E00C70CC9 /* MySortTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySortTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,17 @@
 				70E94F3622E5B1F000EA357B /* RevertSum.swift */,
 			);
 			path = "递归";
+			sourceTree = "<group>";
+		};
+		E5207A5622FAF3EA007D5EA9 /* 数组 */ = {
+			isa = PBXGroup;
+			children = (
+				E59CCA0922CCDDC20074CBD3 /* BinarySearch.swift */,
+				E5D02AAC22CC90D10075D3AC /* FindSecondBigNumber.swift */,
+				E575A5AF22DB249E0098211C /* OrderedArray.swift */,
+				E5207A5722FAF462007D5EA9 /* MaxSubArray.swift */,
+			);
+			path = "数组";
 			sourceTree = "<group>";
 		};
 		E5993CBA1E79561E00C70CC9 = {
@@ -135,11 +148,9 @@
 		E5D02AAE22CC914A0075D3AC /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				E5207A5622FAF3EA007D5EA9 /* 数组 */,
 				70E94F3322E5AD1E00EA357B /* 递归 */,
 				E51BD4B222B93063009899C9 /* TwoValueSum.swift */,
-				E5D02AAC22CC90D10075D3AC /* FindSecondBigNumber.swift */,
-				E59CCA0922CCDDC20074CBD3 /* BinarySearch.swift */,
-				E575A5AF22DB249E0098211C /* OrderedArray.swift */,
 				70A8FC6022E617D200092188 /* ExchangeValue.swift */,
 			);
 			path = Algorithm;
@@ -228,6 +239,7 @@
 				E5993CCE1E79561E00C70CC9 /* ViewController.m in Sources */,
 				E5D02AAD22CC90D10075D3AC /* FindSecondBigNumber.swift in Sources */,
 				E5993CCB1E79561E00C70CC9 /* AppDelegate.m in Sources */,
+				E5207A5822FAF462007D5EA9 /* MaxSubArray.swift in Sources */,
 				E5993CC81E79561E00C70CC9 /* main.m in Sources */,
 				E5993CE01E79566D00C70CC9 /* ZJSort.m in Sources */,
 			);

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yc9-96-5yj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yc9-96-5yj">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -120,15 +120,25 @@
                                     <action selector="exchangeValue:" destination="gdf-h3-eyD" eventType="touchUpInside" id="WPz-Dd-GBL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOh-QE-z3p">
+                                <rect key="frame" x="116.5" y="513" width="181" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="8.数组中最大子序和"/>
+                                <connections>
+                                    <action selector="maxSubArray:" destination="gdf-h3-eyD" eventType="touchUpInside" id="cw6-Gg-6BA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BFa-f1-RBc" firstAttribute="top" secondItem="1se-4U-5bA" secondAttribute="bottom" constant="12" id="2G1-Wu-jIY"/>
                             <constraint firstItem="JMt-KB-K0p" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="73V-pb-jtk"/>
                             <constraint firstItem="ibD-cp-eiW" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="7Yf-Tb-O2Q"/>
+                            <constraint firstItem="mOh-QE-z3p" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="AgY-As-ZIa"/>
                             <constraint firstItem="BFa-f1-RBc" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="GLO-X4-eW3"/>
                             <constraint firstItem="MoO-Da-DX3" firstAttribute="top" secondItem="ibD-cp-eiW" secondAttribute="bottom" constant="14" id="PBo-0Z-sop"/>
                             <constraint firstItem="yVL-dM-UxF" firstAttribute="top" secondItem="BFa-f1-RBc" secondAttribute="bottom" constant="14" id="QqE-31-GfB"/>
+                            <constraint firstItem="mOh-QE-z3p" firstAttribute="top" secondItem="JMt-KB-K0p" secondAttribute="bottom" constant="16" id="RK9-t9-rG2"/>
                             <constraint firstItem="JMt-KB-K0p" firstAttribute="top" secondItem="igA-yQ-mIv" secondAttribute="bottom" constant="14" id="Rlr-IZ-Jem"/>
                             <constraint firstItem="igA-yQ-mIv" firstAttribute="centerX" secondItem="LSM-kD-3g2" secondAttribute="centerX" id="STc-Kx-SXh"/>
                             <constraint firstItem="1se-4U-5bA" firstAttribute="top" secondItem="yKR-qY-j8z" secondAttribute="bottom" constant="75" id="a96-Ym-clF"/>

@@ -111,6 +111,8 @@ class SwiftViewController: UIViewController {
         let sum = RevertSum.add(100)
         print("1+2+3+...+100 = \(sum)")
     }
+    
+    /// 7.不用中间变量，交换A和B的值
     @IBAction func exchangeValue(_ sender: UIButton) {
         var a = 3
         var b = 5
@@ -122,4 +124,17 @@ class SwiftViewController: UIViewController {
         ExchangeVlalue.changeC(&a, &b)
         print("第三次交换：a = \(a),b = \(b)")
     }
+    
+    /// 8.最大子序和
+    @IBAction func maxSubArray(_ sender: UIButton) {
+        
+        // let nums = [-2,-21,-3,-1,-7,-12,-9,-5,-4] // 全是负数的情况
+        let nums = [-2,1,-3,4,-1,-2,2,-1,4]
+        print("数组为：\(nums)")
+
+        let sum = MaxSubArray.sum(nums)
+        print("子序列最大和为：\(sum)")
+        
+    }
+
 }
